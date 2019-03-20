@@ -28,7 +28,7 @@ public class LogAop {
     // 保证每个线程都有一个单独的实例
     private ThreadLocal<Long> time = new ThreadLocal<>();
 
-    @Pointcut("execution(* com.dtpt.controller..*.*(..))")
+    @Pointcut("execution(* com.example.controller..*.*(..))")
     public void pointcut() {
     }
 
