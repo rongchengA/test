@@ -1,11 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+<html>
+<head lang="en">
+<title>Spring Boot Demo - FreeMarker</title>
+<link href="/css/index.css" rel="stylesheet">
+<script type="text/javascript" src="/jars/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="/js/index.js"></script>
 </head>
 <body>
-FreeMarker模板引擎
-<h1>${host}</h1>
+    <h2>首页</h2>
+
+    <font>
+        <#list userList as item>
+            ${item!}<br />
+        </#list>
+    </font>
+
 </body>
 </html>
