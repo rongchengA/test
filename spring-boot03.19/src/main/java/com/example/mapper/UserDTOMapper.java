@@ -1,8 +1,6 @@
 package com.example.mapper;
 
 import com.example.pojo.UserDTO;
-import org.mapstruct.Mapper;
-import org.springframework.stereotype.Repository;
 
 public interface UserDTOMapper {
     /**
@@ -53,15 +51,5 @@ public interface UserDTOMapper {
      */
     int updateByPrimaryKey(UserDTO record);
 
-    /**
-     *
-     * 功能描述:查询用户（登陆）
-     *
-     * @param:
-     * @return:
-     * @auther: Admin
-     * @date: 2019/3/21 10:11
-     * rongcheng
-     */
     UserDTO queryName(String user);
 }

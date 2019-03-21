@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script th:src="@{/jquery/js/jquery.min.js}" src="../static/jquery/js/jquery.min.js"></script>
+
+</head>
+<body>
+
+<center>
+    <h2>登录页</h2>
+<form >
+    用户名:<br>
+    <input type="text" required="required" id="username" >
+    <br>
+    密码:<br>
+    <input type="text" required="required" id="password" >
+    <br><br>
+    <button class="btn btn-lg btn-warning btn-block" type="button"  id="loginsub">登录</button>
+</form >
+</center>
+
+
+<script type="text/javascript">
+
+    $('#loginsub').click(
+
+        function() {
+            $.ajax({
+                type : "POST", // post提交方式默认是get
+                url : "/login",
+                data :{"username":$("#username").val() ,"password": $("#password").val()},
+                error : function(request) {
+                    toastr.error("系统异常");
+                    return;
+                },
+                success : function(data) {
+                    if(data.success){
+                        parent.location.href='index.html';
+                    }else{
+                        alert(data.msg);
+                    }
+                }
+            });
+
+        })
+</script>
+</body>
+</html>

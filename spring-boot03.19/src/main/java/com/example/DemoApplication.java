@@ -7,13 +7,12 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
-import org.springframework.context.annotation.ComponentScan;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @SpringBootApplication
 @EnableSwagger2
 @MapperScan("com.example.mapper") // 扫描mapper文件
-public class DemoApplication {
+public class DemoApplication extends SpringBootServletInitializer {
     private static final Logger logger = LogManager.getLogger(DemoApplication.class);
 
     public static void main(String[] args) throws Exception {

@@ -31,8 +31,6 @@
     from t_user
     where uid = #{uid,jdbcType=INTEGER}
   </select>
-
-
   <select id="queryName" parameterType="String" resultType="com.example.pojo.UserDTO">
     <!--
       WARNING - @mbg.generated
@@ -41,7 +39,7 @@
     select
     <include refid="Base_Column_List" />
     from t_user
-    where username = #{username,jdbcType=VARCHAR}
+    where username = #{user}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     <!--
