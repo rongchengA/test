@@ -1,0 +1,243 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	/* background: url("../img/banner.png") no-repeat; */
+	background-size: cover;
+	background-attachment: fixed;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="home/img/banner.png",
+		sizingMethod='scale');
+	-ms-filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="home/img/banner.png",
+		sizingMethod='scale');
+	background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+}
+.muser span{
+	color: #328AF6;
+    font-size: 14px;
+    width: 84px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
+    float: left;
+    margin-top: -9px;
+    margin-left: 3px;
+}
+.navbar-nav:hover{
+	background:none!important;
+}
+.hright p{
+	display: block;
+    color: #fff;
+    line-height: 50px;
+    font-size: 12px!important;
+}
+.hright p:hover{
+	display:block;
+	color:#fff!important;
+}
+.exit_img{
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    position: relative;
+    right: -35px;
+}
+.exit_input{
+	padding-left: 20px!important;
+}
+.user-menu{
+	left:25px!important;
+}
+/*首页鼠标滑过颜色*/
+.sidebar-menu>li>a:hover{
+	color:#5599ff;
+}
+.sidebar-menu .treeview-menu>li>a:hover{
+	color:#333; 
+	background:#C2DBFA;
+	border-left:3px solid #328AF6;
+}
+.content-wrapper .content-tabs .page-tabs a.active {
+  background-color: #5CACFA !important;
+    height: 50px;
+}
+/* 主体部分 */
+/* .main {
+	width: 100%;
+	height: 100%;
+	padding-left: 240px;
+	margin-left: -240px;
+	padding-top: 60px;
+	margin-top: -60px;
+	position: fixed;
+	top: 62px;
+	left: 238px;
+} */
+
+.main .body {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.navbar-nav>li>a {
+    padding-bottom: 35px;
+    line-height: 0.2rem;
+    color: #fff;
+    display:  block;
+}
+
+.mian .mtop {
+	width: 100%;
+	height: 6.8rem;
+	padding-left: 23.8rem;
+	margin-left: -23.8rem;
+	position: fixed;
+	top: 5rem;
+	overflow: hidden;
+}
+
+.main .mtop .nav {
+	height: 6.8rem;
+	background-color: #fff;
+	padding-top: 1.2rem;
+	border-right: 5.6rem solid #D9EDF7;
+	border-left: 1.1rem solid #D9EDF7;
+	border-top: 0.6rem solid #D9EDF7;
+	border-bottom: 0.6rem solid #D9EDF7;
+}
+
+.main .mtop .search {
+	width: 24rem;
+	height: 3rem;
+	float: right;
+	border: 0.1rem solid #ccc;
+	border-radius: 0.4rem;
+	margin-right: 6rem;
+	padding-left: 1rem;
+	position: relative;
+}
+
+.main .mtop .search .inp {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	padding-left: 1rem;
+}
+
+.main .mtop .search .btn {
+	height: 100%;
+	width: 5rem;
+	background-color: #3790E2;
+	position: absolute;
+	right: 0;
+	margin: 0;
+}
+
+.main .mtop button {
+	width: 9rem;
+	height: 3rem;
+	border: none;
+	outline: none;
+	color: #fff;
+	margin-right: 1rem;
+	border-radius: 0.4rem;
+}
+
+.main .mtop .add {
+	background-color: #5EBB5E;
+	margin-left: 2.8rem;
+}
+
+.mtop .rev {
+	background-color: #49AFCD;
+}
+
+.mtop .omit {
+	background-color: #F39800;
+}
+
+.main .mtop img {
+	width: 1.4rem;
+	height: 1.4rem;
+	margin-right: 0.8rem;
+}
+
+.main .body .body_btn {
+	width: 100%;
+	height: 100%;
+	margin-top: 10rem;
+	padding-bottom: 13.2rem;
+	text-align: center;
+	border-left: 3.8rem solid #E9F0FF;
+	border-top: 2.4rem solid #E9F0FF;
+	border-right: 5.8rem solid #E9F0FF;
+	border-bottom: 15rem solid #E9F0FF;
+	background-color: #fff;
+	font-size: 1.4rem;
+	font-family: MicrosoftYaHei;
+	color: #505050;
+	overflow: hidden;
+	overflow-y: auto;
+	overflow-x: auto;
+}
+
+
+/* 表格数据 */
+.main .body .table .th_inp {
+	width: 4rem;
+}
+
+.main .body .table th {
+	white-space: nowrap;
+	text-align: center;
+	font-weight: normal;
+	background-color: #3790E2;
+	color: #fff;
+}
+
+.main .body .table tr {
+	text-align: center;
+	font-weight: normal;
+	background-color: #fff;
+}
+
+.main .body .table tr:hover {
+	text-align: center;
+	font-weight: normal;
+	background-color: #D9EDF7 !important;
+}
+
+.main .body .table td {
+	vertical-align: middle;
+}
+
+<!-- 页面样式美化-->
+
+/* .nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: #3366cc!important ;
+} */
+
+/* 版本号 */
+.version{
+	height: 0.46rem;
+	width: 100%;
+	background-color: #E9F0FF;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+	line-height: 0.46rem;
+	color: #666666;
+	font-size: 0.14rem;
+	z-index:9999999;
+}
+/* 退出样式 */
+.outButton{
+	 margin-top: 0%!important;
+}
+

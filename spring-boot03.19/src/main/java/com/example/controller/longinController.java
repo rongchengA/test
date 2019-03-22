@@ -36,6 +36,12 @@ public class longinController extends GeneralController{
         ModelAndView model = new ModelAndView("longin");
         return model;
     }
+    //首页
+    @RequestMapping("/index")
+    public ModelAndView index(HttpServletRequest request, HttpServletResponse response) {
+        ModelAndView model = new ModelAndView("index");
+        return model;
+    }
 
     /**
      *
