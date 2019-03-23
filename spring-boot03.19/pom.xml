@@ -23,6 +23,16 @@
 
     <build>
         <plugins>
+
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <!-- fork: 如果没有该项配置，配置的devtools不会起作用，即应用不会restart -->
+                    <fork>true</fork>
+                </configuration>
+            </plugin>
+
             <plugin>
                 <!--Mybatis-generator插件,用于自动生成Mapper和POJO-->
                 <groupId>org.mybatis.generator</groupId>
@@ -41,10 +51,12 @@
                         </goals>
                     </execution>
                 </executions>
+
             </plugin>
         </plugins>
 
     </build>
+
 
     <dependencies>
         <dependency>
@@ -104,6 +116,14 @@
             <groupId>net.sourceforge.nekohtml</groupId>
             <artifactId>nekohtml</artifactId>
             <version>1.9.15</version>
+        </dependency>
+
+        <!-- 热加载-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <optional>true</optional>
+            <!--<scope>true</scope>-->
         </dependency>
 
     </dependencies>

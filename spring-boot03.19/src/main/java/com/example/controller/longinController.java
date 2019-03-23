@@ -39,7 +39,7 @@ public class longinController extends GeneralController{
     //首页
     @RequestMapping("/index")
     public ModelAndView index(HttpServletRequest request, HttpServletResponse response) {
-        ModelAndView model = new ModelAndView("index");
+        ModelAndView model = new ModelAndView("backstage/index");
         return model;
     }
 
